@@ -1,2 +1,6 @@
 # Project exclude paths
 /venv/
+/.vscode/
+/.idea/
+/__pycache__/
+/ecommerce/__pycache__/
