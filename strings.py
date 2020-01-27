@@ -50,22 +50,24 @@ print(msg)
 # The numbers inside the tuples represents the index of the elements in the format function call
 print('{0} => {1} => {2}'.format(3, 'sri', True))
 print('{1} => {0} => {2}'.format(3, 'sri', True))
+print('{1} => {2} => {0}'.format(3, 'sri', True))
 my_tuple = (4, 'Rabbit', False)
 print('{0}'.format(my_tuple))
-# Arguments by name
+# Arguments by name (keyword arguments - kwargs)
 print('I\'m {name} working as {work}'.format(work='Developer', name='Gadgeter'))
 print('I\'m {name} working as {work}'.format(name='Gadgeter', work='Developer'))
 # =========================================
 # >>>>> String Methods <<<<<
 dummyStr = 'python Tutorial pYthon'
 
-print(len(dummyStr)) # Return the number of items in a container ( A container might be a String / List )
+print(len(dummyStr))  # Return the number of items in a container ( A container might be a String / List )
 print(dummyStr.capitalize())  # Capitalize
 print(dummyStr.upper())  # convert to upper case
 print(dummyStr.lower())  # convert to lower case
 print(dummyStr.swapcase())  # convert to swap case
 
-# find the substring. Return index of the first match of the first letter of the substring if the substring matches. Otherwise, return -1
+# find the substring.
+# Return index of the first match of the first letter of the substring if the substring matches. Otherwise, return -1
 print(dummyStr.find('i'))
 print(dummyStr.find('I'))
 print(dummyStr.find('t'))

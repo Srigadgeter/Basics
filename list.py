@@ -54,15 +54,17 @@ numbers = [3, 4, 9, 0, 2, 6, 4]
 numbers.append(8)  # Add a new element @ last
 numbers.insert(0, 8)  # Add a new element @ the given position
 numbers.insert(4, 8)
-numbers.remove(9)  # Remove the element based on value
-numbers.clear()  # Remove all the elements in the list
+numbers.remove(9)  # Remove first occurrance of the value given
 numbers.pop()  # Remove the last element
 numbers.pop(2)  # Remove the element based on index
 numbers.sort()  # Sort A -> Z
 numbers.sort(reverse=True)  # Sort Z -> A (Reverse Sort)
 numbers.reverse()  # Reverse the list
 print(numbers)
+numbers.clear()  # Remove all the elements in the list
+print(numbers)
 
+numbers = [3, 4, 9, 0, 2, 6, 4]
 numbers2 = numbers.copy()
 numbers3 = numbers[:]
 numbers.append(32)

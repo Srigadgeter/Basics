@@ -17,12 +17,12 @@ tax_calculation()
 # >>>>> Generating Random Values (By importing the package called random) <<<<<
 import random
 
-aa = random.random() # Random float:  0.0 <= n < 1.0
-bb = random.randint(5, 10) # Random integer: a <= n <= b (Here a = 5, b = 10)
+aa = random.random()  # Random float:  0.0 <= n < 1.0
+bb = random.randint(5, 10)  # Random integer: a <= n <= b (Here a = 5, b = 10)
 cc = None
 roles = ['gadgeter', 'gamer', 'developer', 'designer']
 try:
-    cc = random.choice(roles) # Randomly pick one from the list
+    cc = random.choice(roles)  # Randomly pick one from the list
 except IndexError:
     print('List should not be empty')
 

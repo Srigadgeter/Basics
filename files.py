@@ -20,6 +20,8 @@ files = path2.glob('*.py')  # searching files endswith '.py' extension inside th
 for file in files:
     print(file)
 
+print('*' * 10)
+
 files2 = path2.glob('*')  # searching all files & folders inside the root directory
 
 for file in files2:

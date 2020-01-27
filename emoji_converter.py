@@ -13,5 +13,5 @@ while True:
         messages = message.split(' ')
         converted_msg = ''
         for msg in messages:
-            converted_msg += f'{emojies.get(msg, msg)} '
+            converted_msg += f'{emojies.get(msg, msg)} '  # get(key, defaultValue) --> defaultValue is optional
         print(converted_msg)
