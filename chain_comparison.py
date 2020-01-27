@@ -1,6 +1,12 @@
 # >>>>> Chaining Comparison Operators <<<<<
-age = 17
-print(18 <= age < 65)
+
+
+def am_i_major(age):
+    return 18 <= age < 65
+
+
+print(am_i_major(17))
+print(am_i_major(23))
 # =========================================
 # *args
 # we can pass multiple parameter if we use *argument_name in function definition
