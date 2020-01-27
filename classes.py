@@ -12,17 +12,17 @@ class Point:
         print('Draw the Point')
 
 
-point1 = Point()
-point1.x = 1
-point1.y = 3
-print(point1.x, point1.y)
-point1.move()
-point1.draw()
-
-Point2 = Point
-print(Point2)
-point3 = Point2()
-print(point3)
+# point1 = Point()
+# point1.x = 1
+# point1.y = 3
+# print(point1.x, point1.y)
+# point1.move()
+# point1.draw()
+#
+# Point2 = Point
+# print(Point2)
+# point3 = Point2()
+# print(point3)
 
 
 point4 = Point(3, 5)
@@ -47,6 +47,11 @@ class Dog(Mammal):
 
 # Cat extends Mammal class
 class Cat(Mammal):
+    # overridden function
+    def walk(self, how):
+        statement = f'I walk {how}'
+        print(statement)
+
     def meow(self):
         print('meow.. meow..')
 
@@ -55,5 +60,5 @@ dog = Dog()
 dog.walk()
 
 cat = Cat()
-cat.walk()
+cat.walk('slowly')
 cat.meow()
