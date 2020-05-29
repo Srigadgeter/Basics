@@ -15,7 +15,7 @@ try:
             current_line_number += 1
             if output_file.mode == 'w':
                 if flag:
-                    end_tag_match_data = re.search('(^\s*}$)|(^}$)', line_data)
+                    end_tag_match_data = re.search('^}$', line_data)
                     output_file.write(line_data)
                     if end_tag_match_data:
                         flag = False
@@ -26,7 +26,7 @@ try:
                         new_write_line = prefix_text + line_data
                         output_file.write(new_write_line)
                     else:
-                        fontface_match_data = re.search('^(@font-face).*$', line_data)
+                        fontface_match_data = re.search('^((@font-face)|(@.*keyframes)).*$', line_data)
                         output_file.write(line_data)
                         if fontface_match_data:
                             flag = True
