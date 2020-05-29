@@ -21,7 +21,7 @@ try:
                         flag = False
                 else:
                     prefix_text = '.formio-form '
-                    match_data = re.search('(^(?!@).*,$)|(^[^@(].*{$)', line_data)
+                    match_data = re.search('(^[^@(].*,$)|(^[^@(].*{$)', line_data)
                     if match_data:
                         new_write_line = prefix_text + line_data
                         output_file.write(new_write_line)
